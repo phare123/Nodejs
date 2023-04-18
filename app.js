@@ -1,4 +1,3 @@
-const path = require("path");
 const cors = require("cors");
 const express = require("express");
 const user = require("./router/user");
@@ -41,6 +40,6 @@ app.use((err,req,res,next) => {
 
 const PORT = process.env.PORT || 80
 
-app.listen(80, () => {
+app.listen(PORT, () => {
   console.log(`server success running http://127.0.0.1:${PORT}`);
 });
